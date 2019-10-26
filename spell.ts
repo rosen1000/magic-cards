@@ -1,34 +1,4 @@
 import { Game } from "./game";
-let types = ["⚔", "🛡", "👣", "👁"];
-export { types };
-export class Type {
-    private attack = types[0];
-    private defence = types[1];
-    private agility = types[2];
-    private willpower = types[3];
-    value;
-    constructor (type: number) {
-        this.change(type);
-    }
-    change(type: number) {
-        switch (type) {
-            case 0: 
-                this.value = this.attack;
-                break;
-            case 1:
-                this.value = this.defence;
-                break;
-            case 2:
-                this.value = this.agility;
-                break;
-            case 3:
-                this.value = this.willpower;
-                break;
-            default:
-                throw new Error("Type can be selected only from 0 to 3");
-        }
-    }
-}
 export class Spell {
     name: string;
     type: string;
