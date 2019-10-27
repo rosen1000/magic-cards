@@ -15,5 +15,7 @@ export class Player {
         this.HP = startingHP;
         this.name = name;
         this.items = [];
+        this.spells = [];
+        this.energyBars = [];
     }
 }
